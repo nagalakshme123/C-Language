@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() 
+{
+ 
+ 
+  printf("enter your choice:\n");
+  printf("1.number 0\n 2.number 1 \n");
+  int choice=0;
+ 
+ scanf("%d",&choice);
+
+ switch(choice)
+ {
+ case 1:
+ printf("you have entered 0");
+ break;
+ case 2:
+ printf("you have entered 1");
+ break;
+ default:
+ printf("you have entered a number which is not in list");
+ break;
+ }
+ return 0;
+
+}
+  
+    
+   
