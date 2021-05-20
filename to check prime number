@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include<stdlib.h>
+#include<stdbool.h>
+
+
+bool prime(int n);
+bool prime(int n)
+{
+    int i=2;
+    while(i*1<=2)
+    {
+        if(n%i==0)
+        {
+            return false;
+        }
+        i++;
+    
+    }
+    return true;
+}
+
+
+
+int main()
+{
+    int n;
+    printf("enter any number:\n");
+    scanf("%d",&n);
+    bool ans=prime(n);
+    if (ans==true)
+    {
+        printf("it is a prime number\n");
+    }
+    else
+    {
+        printf("it is not a prime number");
+    }
+
+    return 0;
+}
